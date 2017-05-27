@@ -7,7 +7,7 @@ forecasting of information content". Will use A.I. to forcast future information
 
 * Forcasting information using A.I. and google sreach for reading resources 
 * Version 1.0
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
 
 ### How do I get set up? ###
 
@@ -27,4 +27,4 @@ forecasting of information content". Will use A.I. to forcast future information
 ### Who do I talk to? ###
 
 * Repoository owner or Alexander Vladimrirov (alexandervladimirov1902@gmail.com)
-* Main page of the author https://bitbucket.org/AlexanderVladimirov9090/
+* Main page of the author (https://bitbucket.org/AlexanderVladimirov9090/)
