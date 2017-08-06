@@ -1,2 +1,5 @@
 rootProject.name = 'future.button'
+include 'author'
+include 'author'
+include 'textauthor'
 
