@@ -21,7 +21,7 @@ public abstract class RandomTextGenerator {
     }
 
     public String generateText(int wordAmount) {
-        if (wordAmount <= SETSIZE) return null;
+        if (wordAmount <= SETSIZE) return " ";
         
         StringBuilder sb = new StringBuilder();
         Random rand = new Random();

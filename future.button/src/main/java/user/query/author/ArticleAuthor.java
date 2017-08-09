@@ -15,7 +15,7 @@ import java.util.HashMap;
  * m = number of words to be generated
  * The time complexity of this algorithm is O(n);
  * The space complexity of this algorithm is O(n);
- */
+ * */
 public class ArticleAuthor extends RandomTextGenerator {
 
     private final HashMap<WordSet, ArrayList<String>> wordMap;
@@ -26,24 +26,21 @@ public class ArticleAuthor extends RandomTextGenerator {
         makeWordMap();
     }
 
+    /**
+     * Generates title for an article.
+     * @return title of article.
+     */
     public String writeTitle() {
-        return writeArticle(5);
+        return this.writeArticle(5);
     }
 
+    /**
+     * Generates text of an article.
+     * @param amountOfWord how many words to be the article.
+     * @return body of the article.
+     */
     public String writeArticle(int amountOfWord) {
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(new File("E:\\Projects\\ai\\futurebutton\\future.button\\lib\\Ivan_Vazov_-_Pod_igoto_-1773-b.txt")));
-            StringBuilder currentText = new StringBuilder();
-            String eachLine = " ";
-            while ((eachLine = bufferedReader.readLine()) != null) {
-                currentText.append(eachLine);
-            }
-            ArticleAuthor gen = new ArticleAuthor(currentText.toString());
-            return gen.generateText(amountOfWord);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
+            return this.generateText(amountOfWord);
     }
 
     @Override
