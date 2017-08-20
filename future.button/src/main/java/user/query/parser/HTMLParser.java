@@ -31,8 +31,8 @@ public class HTMLParser { private final DateFormat dateFormat = new SimpleDateFo
         Elements articles = doc.select(paragraph);
         for (int i = 0; i < titles.size(); i++) {
             FutureDate futureDate = new FutureDate(RIGHT_LIMITH);
-            String title = " Date: " + dateFormat.format(new Date(futureDate.generateDate()))+ " " + query + " " + articleAuthor.writeTitle();
-            String content = query + " " + articleAuthor.writeArticle(10);
+            String title = " Date: " + dateFormat.format(new Date(futureDate.generateDate()));
+            String content = query + " " + articleAuthor.writeArticle(4);
             Element head = titles.select(headOfArticle).get(i);
             head.text(title);
             Element article = articles.select(paragraph).get(i + 1);
