@@ -1,27 +1,30 @@
 package user.query.date;
 
-import java.util.Date;
 import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Created on 09-Aug-17
  *
  * @author Alexander Vladimirov
  * <alexandervladimirov1902@gmail.com>
+ *     This class generates random future date.
  */
 public class FutureDate {
     private long currentTimeMillis= System.currentTimeMillis();
-    private final Long rightLimith;
+    private final Long rightLimit;
 
-    public FutureDate(Long right_limith) {
-        this.rightLimith = right_limith;
+    public FutureDate(Long rightLimit) {
+        this.rightLimit = rightLimit;
     }
 
-    public long generateDate(){
+    /**
+     * Generates random future date for the article.
+     * @return Random future date.
+     */
+    public long generateAsLong(){
         Random random = new Random();
 
-        return currentTimeMillis  + (long) (random.nextDouble() * (rightLimith+currentTimeMillis));
+        return currentTimeMillis  + (long) (random.nextDouble() * (rightLimit +currentTimeMillis));
     }
 
 }

@@ -32,14 +32,16 @@ public class Query extends HttpServlet {
         try {
             String query = request.getParameter("query");
             PrintWriter out = response.getWriter();
-            Document doc = Jsoup.parse(new File("E:\\Projects\\ai\\futurebutton\\future.button\\src\\main\\resources\\executedquery.html"), response.getCharacterEncoding());
+
+            Document doc = Jsoup.parse(new File("E:\\Projects\\ai\\futurebutton\\future.button\\src\\main\\resources\\executedquery.html"), "utf-8");
             HTMLParser htmlParser = new HTMLParser();
             String headOfArticle = "h3";
             String paragraph = "p";
 
             htmlParser.constructDocument(doc, headOfArticle, paragraph, query);
             out.println(doc.toString());
-        } catch (IOException e) {
+
+      } catch (IOException e) {
             e.printStackTrace();
         }
     }

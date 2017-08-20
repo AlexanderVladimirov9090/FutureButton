@@ -8,13 +8,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * This version of the RandomTextGenerator maps all the words following the WordSet
- * into a HashMap to make the text generation faster. It does use more space to
- * do this however.
- * n = size of input text
- * m = number of words to be generated
- * The time complexity of this algorithm is O(n);
- * The space complexity of this algorithm is O(n);
+ * Created on 09-Aug-17
+ *
+ * @author Alexander Vladimirov
+ * <alexandervladimirov1902@gmail.com>
+ *     This class generates a text based on given information.
  * */
 public class ArticleAuthor extends RandomTextGenerator {
 
@@ -27,17 +25,9 @@ public class ArticleAuthor extends RandomTextGenerator {
     }
 
     /**
-     * Generates title for an article.
-     * @return title of article.
-     */
-    public String writeTitle() {
-        return this.writeArticle(5);
-    }
-
-    /**
      * Generates text of an article.
-     * @param amountOfWord how many words to be the article.
-     * @return body of the article.
+     * @param amountOfWord how many words will be used to generate article.
+     * @return string of generated article.
      */
     public String writeArticle(int amountOfWord) {
             return this.generateText(amountOfWord);

@@ -1,6 +1,10 @@
 package user.query.author;
 
 /**
+ * Created on 06-Aug-17
+ *
+ * @author Alexander Vladimirov
+ * <alexandervladimirov1902@gmail.com>
  * A set of three words for which we will find the words that follow after.
  */
 public class WordSet {
