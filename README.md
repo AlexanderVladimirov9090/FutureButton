@@ -1,7 +1,8 @@
-# Phylogenetically forecasting of information content: FutureButton #
+# Phylogenetically forecasting of information content: Prototype of FutureButton #
 
-This is application for my thesis "Phylogenetically
-forecasting of information content". Will use A.I. to forcast future information thru keyworkds used google search and read resources.
+This is application is prototype for my thesis "Phylogenetically
+forecasting of information content". In near future it will use A.I. to forcast future information thru keyworkds used google search and read resources.
+
 
 ### What is this repository for? ###
 
