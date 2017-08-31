@@ -1,0 +1,380 @@
+2017-08-22 11:30:40,718 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Load & Vectorize Sentences....
+
+2017-08-22 11:30:40,782 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-08-22 11:30:40,893 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-08-22 11:30:41,445 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-08-22 11:30:41,447 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in main
+                
+Backend used: [CPU]; OS: [Windows 10]
+
+2017-08-22 11:30:41,449 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in main
+                
+Cores: [8]; Memory: [3.5GB];
+
+2017-08-22 11:30:41,449 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in main
+                
+Blas vendor: [OPENBLAS]
+
+2017-08-22 11:30:41,512 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Building model....
+
+2017-08-22 11:30:41,542 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Fitting Word2Vec model....
+
+2017-08-22 11:30:41,565 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Starting vocabulary building...
+
+2017-08-22 11:30:55,447 - [INFO] - from org.deeplearning4j.models.word2vec.wordstore.VocabConstructor in main
+                
+Sequences checked: [97162], Current vocabulary size: [242]; Sequences/sec: [6999.14];
+
+2017-08-22 11:30:55,457 - [INFO] - from org.deeplearning4j.models.embeddings.loader.WordVectorSerializer in main
+                
+Projected memory use for model: [0.18 MB]
+
+2017-08-22 11:30:55,485 - [INFO] - from org.deeplearning4j.models.embeddings.inmemory.InMemoryLookupTable in main
+                
+Initializing syn1...
+
+2017-08-22 11:30:55,485 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Building learning algorithms:
+
+2017-08-22 11:30:55,485 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+          building ElementsLearningAlgorithm: [SkipGram]
+
+2017-08-22 11:30:55,488 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Starting learning process...
+
+2017-08-22 11:30:59,251 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Epoch: [1]; Words vectorized so far: [634303];  Lines vectorized so far: [97162]; learningRate: [1.0E-4]
+
+2017-08-22 11:30:59,251 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Time spent on training: 3763 ms
+
+2017-08-22 11:30:59,415 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Closest words to 'day' on 1st run: [night, week, year, game, season, group, office, set, time, court]
+
+2017-08-22 11:30:59,851 - [INFO] - from org.deeplearning4j.models.embeddings.loader.WordVectorSerializer in main
+                
+Word2Vec conf. JSON: {"allowParallelTokenization":true,"batchSize":512,"elementsLearningAlgorithm":null,"epochs":1,"hugeModelExpected":false,"iterations":1,"layersSize":100,"learningRate":0.025,"learningRateDecayWords":0,"minLearningRate":1.0E-4,"minWordFrequency":5,"modelUtils":"org.deeplearning4j.models.embeddings.reader.impl.BasicModelUtils","negative":0.0,"ngram":0,"preciseWeightInit":false,"sampling":0.0,"scavengerActivationThreshold":2000000,"scavengerRetentionDelay":3,"seed":42,"sequenceLearningAlgorithm":null,"stop":"STOP","stopList":[],"tokenPreProcessor":"org.deeplearning4j.text.tokenization.tokenizer.preprocessor.CommonPreprocessor","tokenizerFactory":"org.deeplearning4j.text.tokenization.tokenizerfactory.DefaultTokenizerFactory","trainElementsVectors":true,"trainSequenceVectors":true,"unk":"UNK","useAdaGrad":false,"useHierarchicSoftmax":true,"useUnknown":false,"variableWindows":null,"vocabSize":242,"window":5}
+
+2017-08-22 11:31:00,018 - [INFO] - from org.deeplearning4j.models.embeddings.inmemory.InMemoryLookupTable in main
+                
+Initializing syn1...
+
+2017-08-22 11:31:00,100 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Word2vec uptraining...
+
+2017-08-22 11:31:00,116 - [INFO] - from org.deeplearning4j.models.embeddings.loader.WordVectorSerializer in main
+                
+Projected memory use for model: [0.18 MB]
+
+2017-08-22 11:31:00,130 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Building learning algorithms:
+
+2017-08-22 11:31:00,130 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+          building ElementsLearningAlgorithm: [SkipGram]
+
+2017-08-22 11:31:00,131 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Starting learning process...
+
+2017-08-22 11:31:02,621 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Epoch: [1]; Words vectorized so far: [634303];  Lines vectorized so far: [97162]; learningRate: [1.0E-4]
+
+2017-08-22 11:31:02,621 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Time spent on training: 2490 ms
+
+2017-08-22 11:31:02,625 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Closest words to 'day' on 2nd run: [week, night, game, year, season, group, office, time, before, man, yesterday, times, team, days, -, until, director, several, after, called, country, set, family, second, home, program, off, while, place, during, another, show, life, john, play, two, four, way, had, every, at, war, million, being, center, school, years, few, little, three, department, house, street, part, then, high, over, an, get, each, one, world, since, ago, made, big, court, such, market, because, through, university, police, all, case, also, them, former, company, left, might, like, without, city, ms, five, west, those, same, will, me, children, national, other, down, now, against, music, found, which]
+
+2017-08-22 11:34:59,362 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Load & Vectorize Sentences....
+
+2017-08-22 11:34:59,419 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-08-22 11:34:59,535 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-08-22 11:35:00,053 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-08-22 11:35:00,055 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in main
+                
+Backend used: [CPU]; OS: [Windows 10]
+
+2017-08-22 11:35:00,056 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in main
+                
+Cores: [8]; Memory: [3.5GB];
+
+2017-08-22 11:35:00,056 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in main
+                
+Blas vendor: [OPENBLAS]
+
+2017-08-22 11:35:00,123 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Building model....
+
+2017-08-22 11:35:00,154 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Fitting Word2Vec model....
+
+2017-08-22 11:35:00,182 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Starting vocabulary building...
+
+2017-08-22 11:35:12,990 - [INFO] - from org.deeplearning4j.models.word2vec.wordstore.VocabConstructor in main
+                
+Sequences checked: [97162], Current vocabulary size: [242]; Sequences/sec: [7586.04];
+
+2017-08-22 11:35:13,000 - [INFO] - from org.deeplearning4j.models.embeddings.loader.WordVectorSerializer in main
+                
+Projected memory use for model: [0.18 MB]
+
+2017-08-22 11:35:13,071 - [INFO] - from org.deeplearning4j.models.embeddings.inmemory.InMemoryLookupTable in main
+                
+Initializing syn1...
+
+2017-08-22 11:35:13,071 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Building learning algorithms:
+
+2017-08-22 11:35:13,071 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+          building ElementsLearningAlgorithm: [SkipGram]
+
+2017-08-22 11:35:13,080 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Starting learning process...
+
+2017-08-22 11:35:17,343 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Epoch: [1]; Words vectorized so far: [634303];  Lines vectorized so far: [97162]; learningRate: [1.0E-4]
+
+2017-08-22 11:35:17,343 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Time spent on training: 4263 ms
+
+2017-08-22 11:35:17,507 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Closest words to 'day' on 1st run: [night, week, year, game, season, time, group, office, center, off]
+
+2017-08-22 11:35:18,100 - [INFO] - from org.deeplearning4j.models.embeddings.loader.WordVectorSerializer in main
+                
+Word2Vec conf. JSON: PK  h\K               syn0.txtT�۪��q����uZ��&��bC :p��̖���\}���.������{7c�议�n�����(��?��5������~���,��v�g�9�ҏZݷ�UJ��:����ڭ�vƬ���)?kY����9����Y���{����uZ��u�m�k���w��׾��og���?��Q�g��*�u4~���2���Z�.M׭�o��'6�7��u�}�=}X9w���?�kM}���9v��e�[t�{�y��O���Kt�soK�sw=��e�}}s볭��Ywn����G+��Ή�\|��w]���m�q�W�{��//�
+
+2017-08-22 11:41:28,881 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Load & Vectorize Sentences....
+
+2017-08-22 11:41:28,938 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-08-22 11:41:29,036 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-08-22 11:41:29,536 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-08-22 11:41:29,538 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in main
+                
+Backend used: [CPU]; OS: [Windows 10]
+
+2017-08-22 11:41:29,538 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in main
+                
+Cores: [8]; Memory: [3.5GB];
+
+2017-08-22 11:41:29,538 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in main
+                
+Blas vendor: [OPENBLAS]
+
+2017-08-22 11:41:29,599 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Building model....
+
+2017-08-22 11:41:29,627 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Fitting Word2Vec model....
+
+2017-08-22 11:41:29,650 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Starting vocabulary building...
+
+2017-08-22 11:41:42,739 - [INFO] - from org.deeplearning4j.models.word2vec.wordstore.VocabConstructor in main
+                
+Sequences checked: [97162], Current vocabulary size: [242]; Sequences/sec: [7423.18];
+
+2017-08-22 11:41:42,748 - [INFO] - from org.deeplearning4j.models.embeddings.loader.WordVectorSerializer in main
+                
+Projected memory use for model: [0.18 MB]
+
+2017-08-22 11:41:42,776 - [INFO] - from org.deeplearning4j.models.embeddings.inmemory.InMemoryLookupTable in main
+                
+Initializing syn1...
+
+2017-08-22 11:41:42,776 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Building learning algorithms:
+
+2017-08-22 11:41:42,776 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+          building ElementsLearningAlgorithm: [SkipGram]
+
+2017-08-22 11:41:42,779 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Starting learning process...
+
+2017-08-22 11:41:46,450 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Epoch: [1]; Words vectorized so far: [634303];  Lines vectorized so far: [97162]; learningRate: [1.0E-4]
+
+2017-08-22 11:41:46,451 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Time spent on training: 3672 ms
+
+2017-08-22 11:41:46,605 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Closest words to 'day' on 1st run: [night, week, year, game, season, office, time, group, set, director]
+
+2017-08-22 11:48:11,543 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Load & Vectorize Sentences....
+
+2017-08-22 11:48:11,583 - [INFO] - from org.nd4j.linalg.factory.Nd4jBackend in main
+                
+Loaded [CpuBackend] backend
+
+2017-08-22 11:48:11,708 - [INFO] - from org.nd4j.nativeblas.NativeOpsHolder in main
+                
+Number of threads used for NativeOps: 4
+
+2017-08-22 11:48:12,246 - [INFO] - from org.nd4j.nativeblas.Nd4jBlas in main
+                
+Number of threads used for BLAS: 4
+
+2017-08-22 11:48:12,248 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in main
+                
+Backend used: [CPU]; OS: [Windows 10]
+
+2017-08-22 11:48:12,248 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in main
+                
+Cores: [8]; Memory: [3.5GB];
+
+2017-08-22 11:48:12,249 - [INFO] - from org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner in main
+                
+Blas vendor: [OPENBLAS]
+
+2017-08-22 11:48:12,324 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Building model....
+
+2017-08-22 11:48:12,375 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Fitting Word2Vec model....
+
+2017-08-22 11:48:12,407 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Starting vocabulary building...
+
+2017-08-22 11:48:26,186 - [INFO] - from org.deeplearning4j.models.word2vec.wordstore.VocabConstructor in main
+                
+Sequences checked: [97162], Current vocabulary size: [242]; Sequences/sec: [7051.46];
+
+2017-08-22 11:48:26,195 - [INFO] - from org.deeplearning4j.models.embeddings.loader.WordVectorSerializer in main
+                
+Projected memory use for model: [0.18 MB]
+
+2017-08-22 11:48:26,223 - [INFO] - from org.deeplearning4j.models.embeddings.inmemory.InMemoryLookupTable in main
+                
+Initializing syn1...
+
+2017-08-22 11:48:26,223 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Building learning algorithms:
+
+2017-08-22 11:48:26,223 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+          building ElementsLearningAlgorithm: [SkipGram]
+
+2017-08-22 11:48:26,226 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Starting learning process...
+
+2017-08-22 11:48:30,103 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Epoch: [1]; Words vectorized so far: [634303];  Lines vectorized so far: [97162]; learningRate: [1.0E-4]
+
+2017-08-22 11:48:30,103 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Time spent on training: 3877 ms
+
+2017-08-22 11:48:30,291 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Closest words to 'day' on 1st run: [night, week, game, year, season, office, time, group, program, set]
+
+2017-08-22 11:48:31,092 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Word2vec uptraining...
+
+2017-08-22 11:48:31,110 - [INFO] - from org.deeplearning4j.models.embeddings.loader.WordVectorSerializer in main
+                
+Projected memory use for model: [0.18 MB]
+
+2017-08-22 11:48:31,127 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Building learning algorithms:
+
+2017-08-22 11:48:31,127 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+          building ElementsLearningAlgorithm: [SkipGram]
+
+2017-08-22 11:48:31,128 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Starting learning process...
+
+2017-08-22 11:48:32,628 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Epoch: [1]; Words vectorized so far: [634303];  Lines vectorized so far: [97162]; learningRate: [1.0E-4]
+
+2017-08-22 11:48:32,629 - [INFO] - from org.deeplearning4j.models.sequencevectors.SequenceVectors in main
+                
+Time spent on training: 1501 ms
+
+2017-08-22 11:48:32,634 - [INFO] - from org.deeplearning4j.examples.nlp.word2vec.Word2VecUptrainingExample in main
+                
+Closest words to 'day' on 2nd run: [night, week, game, year, season, office, time, group, program, set, -, during, off, country, war, team, house, director, while, center, second, until, market, place, its, court, called, man, street, show, days, school, department, million, several, four, ms, company, also, such, world, national, times, being, university, through, public, two, each, general, family, years, high, first, john, three, way, yesterday, today, then, before, home, political, them, west, had, down, former, after, an, between, business, play, federal, law, made, one, life, police, $, him, officials, music, ago, state, at, among, into, few, every, by, president, mr, get, us, up, little, five, since, me]
+

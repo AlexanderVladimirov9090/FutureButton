@@ -1,4 +1,4 @@
-package user.query.author;
+package author;
 
 import java.util.ArrayList;
 import java.util.Random;

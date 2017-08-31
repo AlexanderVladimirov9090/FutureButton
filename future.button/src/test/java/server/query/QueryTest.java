@@ -1,4 +1,4 @@
-package user.query;
+package server.query;
 
 import org.jmock.Expectations;
 import org.jmock.Mockery;

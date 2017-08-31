@@ -1,4 +1,4 @@
-package user.query.parser;
+package parser;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -6,8 +6,6 @@ import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
-
-import static org.junit.Assert.*;
 
 /**
  * Created on 20-Aug-17

@@ -1,4 +1,4 @@
-package user.query.date;
+package date;
 
 import org.junit.Test;
 

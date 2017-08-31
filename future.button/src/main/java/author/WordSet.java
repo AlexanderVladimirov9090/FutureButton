@@ -1,4 +1,4 @@
-package user.query.author;
+package author;
 
 /**
  * Created on 06-Aug-17

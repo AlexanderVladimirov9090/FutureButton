@@ -1,9 +1,5 @@
-package user.query.author;
+package author;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -15,7 +11,6 @@ import java.util.HashMap;
  *     This class generates a text based on given information.
  * */
 public class ArticleAuthor extends RandomTextGenerator {
-
     private final HashMap<WordSet, ArrayList<String>> wordMap;
 
     public ArticleAuthor(String text) {
@@ -30,7 +25,8 @@ public class ArticleAuthor extends RandomTextGenerator {
      * @return string of generated article.
      */
     public String writeArticle(int amountOfWord) {
-            return this.generateText(amountOfWord);
+
+        return this.generateText(amountOfWord);
     }
 
     @Override

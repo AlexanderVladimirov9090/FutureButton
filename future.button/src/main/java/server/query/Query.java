@@ -1,8 +1,8 @@
-package user.query;
+package server.query;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import user.query.parser.HTMLParser;
+import parser.HTMLParser;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;

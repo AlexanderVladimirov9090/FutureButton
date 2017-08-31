@@ -1,11 +1,11 @@
-package user.query.parser;
+package parser;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import user.query.author.ArticleAuthor;
-import user.query.author.FileContent;
-import user.query.date.FutureDate;
+import author.ArticleAuthor;
+import author.FileContent;
+import date.FutureDate;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -33,7 +33,8 @@ public class HTMLParser {
      * @throws IOException
      */
     public void constructDocument(Document doc, String headOfArticle, String paragraph, String query) throws IOException {
-        ArticleAuthor articleAuthor = new ArticleAuthor(new FileContent().contentToString("E:\\Projects\\ai\\futurebutton\\future.button\\lib\\Ivan_Vazov_-_Pod_igoto_-1773-b.txt"));
+
+        ArticleAuthor articleAuthor = new ArticleAuthor(new FileContent().contentToString("E:\\Projects\\ai\\futurebutton\\raw_sentences.txt"));
         Elements titles = doc.select(headOfArticle);
         Elements articles = doc.select(paragraph);
         for (int i = 0; i < titles.size(); i++) {
