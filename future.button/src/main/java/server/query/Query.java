@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.file.Paths;
 
 /**
  * Created on 06-Aug-17
@@ -33,7 +34,7 @@ public class Query extends HttpServlet {
             String query = request.getParameter("query");
             PrintWriter out = response.getWriter();
 
-            Document doc = Jsoup.parse(new File("E:\\Projects\\ai\\futurebutton\\future.button\\src\\main\\resources\\executedquery.html"), "utf-8");
+            Document doc = Jsoup.parse(new File("executedquery.html"), "utf-8");
             HTMLParser htmlParser = new HTMLParser();
             String headOfArticle = "h3";
             String paragraph = "p";

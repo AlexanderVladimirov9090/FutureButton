@@ -7,6 +7,7 @@ import author.ArticleAuthor;
 import author.FileContent;
 import date.FutureDate;
 
+import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -33,8 +34,8 @@ public class HTMLParser {
      * @throws IOException
      */
     public void constructDocument(Document doc, String headOfArticle, String paragraph, String query) throws IOException {
-
-        ArticleAuthor articleAuthor = new ArticleAuthor(new FileContent().contentToString("E:\\Projects\\ai\\futurebutton\\raw_sentences.txt"));
+        File file = new File("raw_sentences.txt");
+        ArticleAuthor articleAuthor = new ArticleAuthor(new FileContent().contentToString(file.getAbsolutePath()));
         Elements titles = doc.select(headOfArticle);
         Elements articles = doc.select(paragraph);
         for (int i = 0; i < titles.size(); i++) {
@@ -44,7 +45,7 @@ public class HTMLParser {
             Element head = titles.select(headOfArticle).get(i);
             head.text(title);
             Element article = articles.select(paragraph).get(i + 1);
-            article.text(content + ".");
+            article.text(content + "."+ file.getAbsolutePath());
         }
     }
 }
