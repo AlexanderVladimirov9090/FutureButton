@@ -45,7 +45,7 @@ public class HTMLParser {
             Element head = titles.select(headOfArticle).get(i);
             head.text(title);
             Element article = articles.select(paragraph).get(i + 1);
-            article.text(content + "."+ file.getAbsolutePath());
+            article.text(content + ".");
         }
     }
 }
