@@ -18,9 +18,8 @@ public class HTMLParserTest {
     @Test
     public void readFile() throws IOException {
         HTMLParser htmlParser = new HTMLParser();
-        Document doc = Jsoup.parse(new File("E:\\Projects\\ai\\futurebutton\\future.button\\src\\test\\resources\\executedquery.html"), "utf-8");
-
-        htmlParser.constructDocument(doc,"h3","p","hello");
+        Document doc = Jsoup.parse(new File(new File("").getAbsolutePath()+"\\src\\test\\resources\\executedquery.html"), "utf-8");
+        htmlParser.constructDocument(doc,"headline","p","hello");
     }
 
 }

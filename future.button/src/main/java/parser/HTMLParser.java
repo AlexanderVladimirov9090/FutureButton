@@ -1,11 +1,11 @@
 package parser;
 
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import author.ArticleAuthor;
 import author.FileContent;
 import date.FutureDate;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import java.io.File;
 import java.io.IOException;
@@ -38,6 +38,7 @@ public class HTMLParser {
         ArticleAuthor articleAuthor = new ArticleAuthor(new FileContent().contentToString(file.getAbsolutePath()));
         Elements titles = doc.select(headOfArticle);
         Elements articles = doc.select(paragraph);
+
         for (int i = 0; i < titles.size(); i++) {
             FutureDate futureDate = new FutureDate(RIGHT_LIMIT);
             String title = " Date: " + dateFormat.format(new Date(futureDate.generateAsLong()));
