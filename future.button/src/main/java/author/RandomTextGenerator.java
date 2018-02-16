@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * @author Jing Ma
- * original code form: https://github.com/JingMa87/Random-Text-Generator
+ * @author Alexander Vladimirov
+ * <alexandervladimirov1902@gmail.com>
  * A program that takes in a text file and uses the words to randomly generate a new text.
  * This generator looks at sets of three consecutive words and finds all the words
  * that follow the sets. Of all these follow-up words, one is chosen randomly
@@ -14,7 +14,7 @@ import java.util.Random;
 public abstract class RandomTextGenerator {
     
     public final String[] text;
-    public final int SETSIZE = 3;
+    public final int SET_SIZE = 3;
     
     public RandomTextGenerator(String text) {
         this.text = text.split("\\s+");

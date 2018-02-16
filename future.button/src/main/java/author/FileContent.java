@@ -3,7 +3,6 @@ package author;
 import java.io.*;
 
 /**
- * Created on 09-Aug-17
  *
  * @author Alexander Vladimirov
  * <alexandervladimirov1902@gmail.com>
